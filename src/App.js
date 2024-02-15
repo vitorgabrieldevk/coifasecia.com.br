@@ -9,17 +9,19 @@ import Home      from    "./pages/Home";
 import Contato   from    "./pages/Contato"; 
 import Galeria   from    "./pages/Galeria"; 
 
-// --- | Importação de Components | ---
+// --- | Importação de LIBS | ---
 
-import Topo      from    "./components/Topo";
-import Rodape   from    "./components/Rodape"; 
-import Fab   from    "./components/Fab"; 
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contato" element={<Contato />} />
+          <Route path="/galeria" element={<Galeria />} />
+        </Routes>
+      </BrowserRouter>
   );
 }
 
