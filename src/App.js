@@ -8,6 +8,7 @@ import './App.css';
 import Home      from    "./pages/Home";
 import Contato   from    "./pages/Contato"; 
 import Galeria   from    "./pages/Galeria"; 
+import Admin     from    "./admin/Admin"
 
 // --- | Importação de LIBS | ---
 
@@ -20,8 +21,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/galeria" element={<Galeria />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
-      </BrowserRouter>
+    </BrowserRouter>
   );
 }
 

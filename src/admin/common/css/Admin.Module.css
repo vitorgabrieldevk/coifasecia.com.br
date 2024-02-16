@@ -1,0 +1,121 @@
+.site-corpo-login {
+    height: 100%;
+}
+
+.d-flex-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100% !important;
+}
+
+.rigth-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(45deg, #2d3981, rgb(96, 119, 253));
+}
+
+.rigth-decoration > img {
+    animation: AnimationImageDecorativa ease-in-out infinite 4s;
+}
+
+@keyframes AnimationImageDecorativa {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.left-Login {
+    width: 30%;
+    height: 100%;
+    z-index: 999;
+    box-shadow: 0 12px 30px #00000056;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-Login > img {
+    width: 195px;
+    height: 35px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 90px;
+}
+
+.box-form {
+    width: 80%;
+    margin-left: 50%;
+    margin-top: -100px;
+    transform: translateX(-50%);
+}
+
+.item-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 8px;
+    margin-top: 30px;
+}
+
+.item-form > label {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item-form > .Filds {
+    border: 1px solid #ABABAB;
+    padding: 12px;
+}
+
+.buttonSubmit {
+    width: 100%;
+    margin-top: 24px;
+    height: 50px;
+    background: #3C4A9E;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .33s;
+    cursor: pointer;
+}
+
+.buttonSubmit:hover {
+    background: transparent;
+    color: #3C4A9E;
+    border: 2px solid #3C4A9E;
+}
+
+.ErrorMessage {
+    color: red;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.AuthorPainel {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+    .left-Login  {
+        width: 100%;
+    }
+
+    .rigth-decoration {
+        display: none;
+    }
+}
